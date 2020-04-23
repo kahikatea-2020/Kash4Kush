@@ -1,8 +1,20 @@
 import React from 'react'
+import Header from './Header'
+import Footer from './Footer'
+import FeaturedStrain from './FeaturedStrain'
+import Home from './Home'
+import Profile from './Profile'
+import Cart from './Cart'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <>
+      <Header/>
+      {/* <Home/> */}
+      {/* <Profile /> */}
+      <Cart />
+      {/* <Footer /> */}
+    </>
   )
 }
 
