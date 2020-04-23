@@ -4,8 +4,9 @@ const strainsURL = 'http://localhost:3000/api/v1/strains/'
 
 const commentsURL = 'http://localhost:3000/api/v1/comments/'
 
-export function getWeed () {
+export function getWeed (strainId) {
   return request.get(strainsURL)
+    .send({id: strainId})
     .then(response => response.body)
 }
 
