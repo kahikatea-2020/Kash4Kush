@@ -1,6 +1,6 @@
-import React from "react"
-import MoreLikeThis from "./MoreLikeThis"
-import Comments from "./Comments"
+import React from 'react'
+import MoreLikeThis from './MoreLikeThis'
+import Comments from './Comments'
 import Footer from './Footer'
 
 const Profile = () => {
@@ -62,4 +62,4 @@ const Profile = () => {
   )
 }
 
-export default Profile;
+export default Profile

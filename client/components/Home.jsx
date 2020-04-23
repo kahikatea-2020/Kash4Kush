@@ -3,73 +3,73 @@ import FeaturedStrain from './FeaturedStrain'
 import Footer from './Footer'
 
 const Home = () => {
-  return(
+  return (
     <>
       <div className="homeDiv">
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeature">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-        <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
         </div>
         <div className="homeFeatureTwo">
-        <FeaturedStrain/>
-        <FeaturedStrain/>
-      </div>
+          <FeaturedStrain/>
+          <FeaturedStrain/>
+        </div>
       </div>
       <Footer />
     </>
