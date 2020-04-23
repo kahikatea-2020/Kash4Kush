@@ -23,3 +23,19 @@ export const removeFromCart = (id, name) => {
     name
   }
 }
+
+export const updateQuantity = (id, quantity) => {
+  return {
+    type: UPDATE_QUANTITY,
+    id,
+    quantity
+  }
+}
+
+export function addCommentsToState () {
+  return (dispatch) => {
+    dispatch(getComments())
+    return request
+    .get('/api/v1/comments')
+  }
+}
