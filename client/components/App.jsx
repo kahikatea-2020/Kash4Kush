@@ -12,13 +12,13 @@ class App extends React.Component {
 
   render () {
     return (
-    <>
-      <Header />
-      <Home />
-      {/* <Profile /> */}
-      {/* <Cart /> */}
-      <Footer />
-    </>
+      <>
+            <Header />
+            <Home />
+            {/* <Profile /> */}
+            {/* <Cart /> */}
+            <Footer />
+      </>
     )
   }
 }
