@@ -1,5 +1,3 @@
-import request from 'superagent'
-
 import { getWeed, getComments, addComment } from '../api'
 export const ADD_TO_CART = 'ADD_TO_CART'
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART'
@@ -33,14 +31,14 @@ export const updateQuantity = (id, quantity) => {
   }
 }
 
-export function getCommentsToState(id) {
+export function getCommentsToState (id) {
   return (dispatch) => dispatch(getComments(id))
 }
 
-export function getWeedToState(id) {
+export function getWeedToState (id) {
   return (dispatch) => dispatch(getWeed(id))
 }
 
-export function addCommentToState(id) {
-  return (dispatch) => dispatch(addComment(id))
+export function addCommentToState (id, comment) {
+  return (dispatch) => dispatch(addComment(id, comment))
 }

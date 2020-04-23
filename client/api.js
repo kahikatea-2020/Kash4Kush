@@ -4,18 +4,20 @@ const strainsURL = 'http://localhost:3000/api/v1/strains/'
 
 const commentsURL = 'http://localhost:3000/api/v1/comments/'
 
-export function getWeed () {
-  return request.get(`${strainsURL}/${id}`)
+export function getWeed (strainId) {
+  return request.get(strainsURL)
+    .send({ id: strainId })
     .then(response => response.body)
 }
 
-export function getComments (id) {
-  return request.get(`${commentsURL}/${id}`)
+export function getComments (strainId) {
+  return request.get(commentsURL)
+    .send({ id: strainId })
     .then(response => response.body)
 }
 
-export function addComment (comment) {
-  return request.post(`${commentsURL}/${id}`)
-    .send(comment)
+export function addComment (strainId, comment) {
+  return request.post(commentsURL)
+    .send({ id: strainId, comment: comment })
     .then(response => response.body)
 }
