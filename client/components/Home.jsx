@@ -75,7 +75,6 @@ class Home extends React.Component {
             <FeaturedStrain />
           </div>
         </div>
-        <Footer />
       </>
     )
   }

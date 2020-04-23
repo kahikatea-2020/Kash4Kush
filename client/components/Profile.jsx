@@ -62,7 +62,6 @@ class Profile extends React.Component {
           <MoreLikeThis />
           <Comments />
         </div>
-        <Footer />
       </>
     )
   }
