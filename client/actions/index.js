@@ -33,10 +33,14 @@ export const updateQuantity = (id, quantity) => {
   }
 }
 
-export function addCommentsToState () {
-  return (dispatch) => {
-    dispatch(getComments())
-    return request
-    .get('/api/v1/comments')
-  }
+export function getCommentsToState(id) {
+  return (dispatch) => dispatch(getComments(id))
+}
+
+export function getWeedToState(id) {
+  return (dispatch) => dispatch(getWeed(id))
+}
+
+export function getWeedToState(id) {
+  return (dispatch) => dispatch(getWeed(id))
 }
