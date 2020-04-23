@@ -1,5 +1,6 @@
 import React from 'react'
 import CommentsList from './CommentsList'
+import { connect } from 'react-redux'
 
 class Comments extends React.Component {
   // this.state = {
@@ -18,4 +19,4 @@ class Comments extends React.Component {
   }
 }
 
-export default Comments
+export default connect()(Comments)
