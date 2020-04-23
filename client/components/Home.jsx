@@ -2,78 +2,83 @@ import React from 'react'
 import FeaturedStrain from './FeaturedStrain'
 import Footer from './Footer'
 
-const Home = () => {
-  return (
-    <>
-      <div className="homeDiv">
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
+class Home extends React.Component {
+  // this.state = {
+
+  // }
+  render () {
+    return (
+      <>
+        <div className="homeDiv">
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeature">
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
+          <div className="homeFeatureTwo">
+            <FeaturedStrain />
+            <FeaturedStrain />
+          </div>
         </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeature">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-        <div className="homeFeatureTwo">
-          <FeaturedStrain/>
-          <FeaturedStrain/>
-        </div>
-      </div>
-      <Footer />
-    </>
-  )
+        <Footer />
+      </>
+    )
+  }
 }
 
 export default Home

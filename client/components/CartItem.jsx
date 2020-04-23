@@ -1,7 +1,12 @@
 import React from 'react'
 
-const CartItem = () => {
-  return (
+class CartItem extends React.Component {
+//   this.state = {
+
+  // }
+
+  render () {
+    return (
     <>
       <div className="cartItemDiv">
 
@@ -36,7 +41,8 @@ const CartItem = () => {
         </div>
       </div>
     </>
-  )
+    )
+  }
 }
 
 export default CartItem
