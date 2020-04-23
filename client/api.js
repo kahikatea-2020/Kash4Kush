@@ -6,13 +6,13 @@ const commentsURL = 'http://localhost:3000/api/v1/comments/'
 
 export function getWeed (strainId) {
   return request.get(strainsURL)
-    .send({id: strainId})
+    .send({ id: strainId })
     .then(response => response.body)
 }
 
 export function getComments (strainId) {
   return request.get(commentsURL)
-    .send({id: strainId})
+    .send({ id: strainId })
     .then(response => response.body)
 }
 
