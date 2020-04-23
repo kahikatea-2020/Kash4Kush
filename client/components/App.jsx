@@ -6,18 +6,18 @@ import Profile from './Profile'
 import Cart from './Cart'
 
 class App extends React.Component {
-//   this.state = {
+  //   this.state = {
 
   // }
 
   render () {
     return (
       <>
-            <Header />
-            <Home />
-            {/* <Profile /> */}
-            {/* <Cart /> */}
-            <Footer />
+        <Header />
+        <Home />
+        {/* <Profile /> */}
+        {/* <Cart /> */}
+        <Footer />
       </>
     )
   }

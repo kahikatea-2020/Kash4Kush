@@ -1,6 +1,5 @@
 import React from 'react'
 import FeaturedStrain from './FeaturedStrain'
-import Footer from './Footer'
 
 class Home extends React.Component {
   // this.state = {
@@ -75,7 +74,6 @@ class Home extends React.Component {
             <FeaturedStrain />
           </div>
         </div>
-        <Footer />
       </>
     )
   }

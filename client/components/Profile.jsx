@@ -1,7 +1,6 @@
 import React from 'react'
 import MoreLikeThis from './MoreLikeThis'
 import Comments from './Comments'
-import Footer from './Footer'
 
 class Profile extends React.Component {
   // this.state = {
@@ -62,7 +61,6 @@ class Profile extends React.Component {
           <MoreLikeThis />
           <Comments />
         </div>
-        <Footer />
       </>
     )
   }
