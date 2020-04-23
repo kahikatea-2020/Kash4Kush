@@ -16,6 +16,6 @@ export function getComments () {
 
 export function addComment (comment) {
   return request.post(commentsURL)
-    .send(commentsURL)
+    .send(comment)
     .then(response => response.body)
 }
