@@ -2,7 +2,7 @@ import React from 'react'
 import CommentsList from './CommentsList'
 
 const Comments = () => {
-  return(
+  return (
     <>
       <div className="commentsDiv">
         <imput />

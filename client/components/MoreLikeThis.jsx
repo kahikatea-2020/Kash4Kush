@@ -2,7 +2,7 @@ import React from 'react'
 import FeaturedStrain from './FeaturedStrain'
 
 const MoreLikeThis = () => {
-  return(
+  return (
     <>
       <div className="moreLikeThisDiv">
         <div className='homeFeatureTwo'>
