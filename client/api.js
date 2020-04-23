@@ -9,8 +9,9 @@ export function getWeed () {
     .then(response => response.body)
 }
 
-export function getComments () {
+export function getComments (strainId) {
   return request.get(commentsURL)
+    .send({id: strainId})
     .then(response => response.body)
 }
 
