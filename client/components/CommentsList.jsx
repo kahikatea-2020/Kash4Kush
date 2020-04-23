@@ -1,7 +1,7 @@
 import React from 'react'
 
 const CommentsList = () => {
-  return(
+  return (
     <>
       <div className="commentsListDiv">
         <p>Comment</p>
