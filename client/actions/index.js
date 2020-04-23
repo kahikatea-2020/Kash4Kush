@@ -41,6 +41,6 @@ export function getWeedToState(id) {
   return (dispatch) => dispatch(getWeed(id))
 }
 
-export function getWeedToState(id) {
-  return (dispatch) => dispatch(getWeed(id))
+export function addCommentToState(id) {
+  return (dispatch) => dispatch(addComment(id))
 }
