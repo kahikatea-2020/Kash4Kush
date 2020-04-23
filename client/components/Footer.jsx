@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footerElements'>
-        <img src="./images/footerlogo.png"/>
+        <img src="/images/footerlogo.png"/>
       </div>
     </div>
   )
