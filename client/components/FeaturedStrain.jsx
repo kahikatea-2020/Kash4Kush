@@ -8,7 +8,7 @@ class FeaturedStrain extends React.Component {
       strainId: 0
     }
 
-    componentWillMount() {
+    componentWillMount () {
       this.props.dispatch(getWeedToState(this.state.strainId))
     }
 
@@ -27,8 +27,8 @@ class FeaturedStrain extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
-  
+  console.log(state)
+
   return {
     strain: state.strain
   }
