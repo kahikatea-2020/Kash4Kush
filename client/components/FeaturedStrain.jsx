@@ -1,16 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
+import { getWeedToState } from '../actions/index'
+
 class FeaturedStrain extends React.Component {
     state = {
       strainId: 0
     }
 
-    getRandomStrainId = () => {
-      var min = Math.ceil(1)
-      var max = Math.floor(2163)
-      const result = Math.floor(Math.random() * (max - min + 1)) + min
-      this.setState({ strainId: result })
+    componentWillMount() {
+      this.props.dispatch(getWeedToState(this.state.strainId))
     }
 
     render () {
@@ -27,10 +26,12 @@ class FeaturedStrain extends React.Component {
     }
 }
 
-// const mapStateToProps = (state) => {
-//   return {
-
-//   }
-// }
+const mapStateToProps = (state) => {
+  console.log(state);
+  
+  return {
+    strain: state.strain
+  }
+}
 
 export default connect(mapStateToProps)(FeaturedStrain)

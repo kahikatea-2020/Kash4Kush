@@ -1,10 +1,10 @@
-import { REC_COMMENTS } from '../actions/index'
+import { REC_COMMENT } from '../actions/index'
 
 const initialCommentsState = []
 
 const commentsReducer = (oldState = initialCommentsState, action) => {
   switch (action.type) {
-    case REC_COMMENTS:
+    case REC_COMMENT:
       return action.comments
 
     default:
