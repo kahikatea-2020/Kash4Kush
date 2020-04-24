@@ -1,4 +1,5 @@
 const express = require('express')
+const request = require('superagent')
 
 const routes = express.Router()
 
@@ -6,7 +7,7 @@ const db = require('./db')
 
 module.exports = routes
 
-//GET /
+// GET /
 
 routes.get('/api/v1/comments', (req, res) => {
   db.getComments(req.body.id)
@@ -16,19 +17,12 @@ routes.get('/api/v1/comments', (req, res) => {
     .catch(() => res.json([]))
 })
 
-// /api/v1/strains
-// export function getWeed () {
-//   return request.get(strainsURL)
-//     .then(response => response.body)
-// }
-
-
-// /api/v1/comments
-// export function getComments (strainId) {
-//   return request.get(commentsURL)
-//     .send(strainId)
-//     .then(response => response.body)
-// }
+routes.get('/api/v1/strains', (req, res) => {
+  const desc = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/desc/${req.body.id}`).then(desc => JSON.parse(desc.text))
+  const effects = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/effects/${req.body.id}`).then(effects => JSON.parse(effects.text))
+  const flavors = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/flavors/${req.body.id}`).then(flavors => JSON.parse(flavors.text))
+  Promise.all([desc, effects, flavors]).then(results => res.json({ desc: results[0].desc, effects: results[1], flavors: results[2] }))
+})
 
 // export function addComment (comment) {
 //   return request.post(commentsURL)
