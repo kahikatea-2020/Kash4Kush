@@ -17,7 +17,16 @@ export function getComments (strainId) {
 }
 
 export function addComment (strainId, comment) {
-  return request.post(commentsURL)
-    .send({ id: strainId, comment: comment })
-    .then(response => response.body)
+  return getComments(strainId)
+    .then(res => {
+      if (res === []) {
+        request.post(commentsURL)
+          .send({ id: strainId, comment: comment })
+          .then(response => response.body)
+      } else {
+        request.put(commentsURL)
+          .send({ id: strainId, newComment: comment, oldComments: res })
+          .then(response => response.body)
+      }
+    })
 }
