@@ -3,9 +3,21 @@ import MoreLikeThis from './MoreLikeThis'
 import Comments from './Comments'
 
 class Profile extends React.Component {
-  // this.state = {
+  getRandomStrainId = () => {
+    let resultArr = []
+    let min = Math.ceil(1)
+    let max = Math.floor(2163)
+    for (var i = 0; i < 4; i++) {
+      resultArr.push(Math.floor(Math.random() * (max - min + 1)) + min)
+    }
+    return resultArr
+  }
 
-  // }
+  state = {
+    strainId: this.props.match.params.id,
+    moreStrainsArr: this.getRandomStrainId()
+  }
+
 
   render () {
     return (
@@ -58,8 +70,8 @@ class Profile extends React.Component {
         </div>
         <div className="moreHR" />
         <div className="moreAndComments">
-          <MoreLikeThis />
-          <Comments />
+          {this.state.moreStrainsArr.map(id => <MoreLikeThis key={id} strainId={id}/>)}
+          <Comments strainId={this.state.strainId}/>
         </div>
       </>
     )

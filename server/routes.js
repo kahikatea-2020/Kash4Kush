@@ -17,15 +17,14 @@ routes.get('/api/v1/comments', (req, res) => {
     .catch(() => res.json([]))
 })
 
-routes.get('/api/v1/strains', (req, res) => {
-  const desc = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/desc/${req.body.id}`).then(desc => JSON.parse(desc.text))
-  const effects = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/effects/${req.body.id}`).then(effects => JSON.parse(effects.text))
-  const flavors = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/flavors/${req.body.id}`).then(flavors => JSON.parse(flavors.text))
-  Promise.all([desc, effects, flavors]).then(results => res.json({ desc: results[0].desc, effects: results[1], flavors: results[2] }))
+routes.get('/api/v1/strains/:id', (req, res) => {
+  const desc = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/desc/${req.params.id}`).then(desc => JSON.parse(desc.text).desc)
+  const effects = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/effects/${req.params.id}`).then(effects => JSON.parse(effects.text))
+  const flavors = request.get(`strainapi.evanbusse.com/WjCIlRU/strains/data/flavors/${req.params.id}`).then(flavors => JSON.parse(flavors.text))
+  Promise.all([desc, effects, flavors]).then(results => res.json({ desc: results[0], effects: results[1], flavors: results[2] }))
 })
 
 routes.put('/api/v1/comments', (req, res) => {
-  console.log(req.body)
   db.addComment(req.body)
     .then(() => res.send('heck yessss'))
     .catch(err => res.send(err.message))

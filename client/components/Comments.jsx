@@ -2,7 +2,7 @@ import React from 'react'
 import CommentsList from './CommentsList'
 
 class Comments extends React.Component {
-  // this.state = {
+  // state = {
 
   // }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 class CommentsList extends React.Component {
-  // this.state = {
+  // state = {
 
   // }
 

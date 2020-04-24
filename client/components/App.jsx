@@ -1,4 +1,6 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
+
 import Header from './Header'
 import Footer from './Footer'
 import Home from './Home'
@@ -10,10 +12,9 @@ const App = () => {
   return (
     <>
       <Header/>
-      <Home/>
-      {/* <Profile /> */}
-      {/* <Cart />  */}
-      {/* <FeaturedStrain /> */}
+      <Route exact path="/" component={Home} />
+      <Route path="/profile/:id" component={Profile} />
+      <Route path="/cart" component={Cart} />
       <Footer />
     </>
   )

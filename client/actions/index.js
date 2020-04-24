@@ -31,12 +31,25 @@ export const updateQuantity = (id, quantity) => {
   }
 }
 
+export const receiveWeed = (strain, id) => {
+  return {
+    type: REC_WEED,
+    id: id,
+    strain
+  }
+}
+
 export function getCommentsToState (id) {
   return (dispatch) => dispatch(getComments(id))
 }
 
 export function getWeedToState (id) {
-  return (dispatch) => dispatch(getWeed(id))
+  return (dispatch) => {
+    return getWeed(id)
+      .then(res => {
+        dispatch(receiveWeed(res, id))
+      })
+  }
 }
 
 export function addCommentToState (id, comment) {

@@ -1,7 +1,7 @@
 import React from 'react'
 
 class CartItem extends React.Component {
-//   this.state = {
+//   state = {
 
   // }
 
