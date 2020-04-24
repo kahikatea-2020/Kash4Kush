@@ -24,8 +24,21 @@ routes.get('/api/v1/strains', (req, res) => {
   Promise.all([desc, effects, flavors]).then(results => res.json({ desc: results[0].desc, effects: results[1], flavors: results[2] }))
 })
 
-// export function addComment (comment) {
+routes.put('/api/v1/comments', (req, res) => {
+  console.log(req.body)
+  db.addComment(req.body)
+    .then(() => res.send('heck yessss'))
+    .catch(err => res.send(err.message))
+})
+
+routes.post('/api/v1/comments', (req, res) => {
+  db.addStrainAndComment(req.body)
+    .then(() => res.send('heck yessss'))
+    .catch(err => res.send(err.message))
+})
+
+// export function addComment (strainId, comment) {
 //   return request.post(commentsURL)
-//     .send(comment)
+//     .send({ id: strainId, comment: comment })
 //     .then(response => response.body)
 // }
