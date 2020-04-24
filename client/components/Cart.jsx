@@ -1,6 +1,5 @@
 import React from 'react'
 import CartItem from './CartItem'
-import Footer from './Footer'
 
 class Cart extends React.Component {
   // this.state = {
@@ -35,7 +34,6 @@ class Cart extends React.Component {
             </div>
           </div>
         </div>
-        <Footer />
       </>
     )
   }
